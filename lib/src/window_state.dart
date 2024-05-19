@@ -108,7 +108,7 @@ class WindowState {
         try {
           final hr = SHGetKnownFolderPath(
             rfid,
-            KF_FLAG_DEFAULT,
+            KNOWN_FOLDER_FLAG.KF_FLAG_DEFAULT,
             NULL,
             result,
           );

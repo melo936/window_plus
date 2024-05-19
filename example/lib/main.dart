@@ -81,8 +81,6 @@ class _MyAppState extends State<MyApp> {
           onSecondary: Color(0xFF000000),
           error: Color(0xFFFF0000),
           onError: Color(0xFFFFFFFF),
-          background: Color(0xFFFFFFFF),
-          onBackground: Color(0xFF000000),
           surface: Color(0xFFFFFFFF),
           onSurface: Color(0xFF000000),
         ),

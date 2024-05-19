@@ -422,8 +422,8 @@ class _WindowCaptionState extends State<WindowCaption> {
     if (!WindowPlus.instance.enableCustomFrame || !Platform.isWindows) {
       return const SizedBox.shrink();
     }
-    final style = GetWindowLongPtr(WindowPlus.instance.hwnd, GWL_STYLE);
-    final fullscreen = !(style & WS_OVERLAPPEDWINDOW > 0);
+    final style = GetWindowLongPtr(WindowPlus.instance.hwnd, WINDOW_LONG_PTR_INDEX.GWL_STYLE);
+    final fullscreen = !(style & WINDOW_STYLE.WS_OVERLAPPEDWINDOW > 0);
     return fullscreen
         ? SizedBox(
             width: double.infinity,
